@@ -7,7 +7,7 @@ const TelnetAvr = require('./telnet-avr');
 
 // Reference fot input id -> Characteristic.InputSourceType
 const inputToType = {
-        '00': 0, // PHONO -> Characteristic.InputSourceType.OTHER
+  /*      '00': 0, // PHONO -> Characteristic.InputSourceType.OTHER
         '01': 0, // CD -> Characteristic.InputSourceType.OTHER
         '02': 2, // TUNER -> Characteristic.InputSourceType.TUNER
         '03': 0, // TAPE -> Characteristic.InputSourceType.OTHER
@@ -17,9 +17,9 @@ const inputToType = {
         '10': 4, // VIDEO -> Characteristic.InputSourceType.COMPOSITE_VIDEO
         '12': 0, // MULTI CH IN -> Characteristic.InputSourceType.OTHER
         '13': 0, // USB-DAC -> Characteristic.InputSourceType.OTHER
-        '14': 6, // VIDEOS2 -> Characteristic.InputSourceType.COMPONENT_VIDEO
+        '14': 6, // VIDEOS2 -> Characteristic.InputSourceType.COMPONENT_VIDEO */
         '15': 3, // DVR/BDR -> Characteristic.InputSourceType.HDMI
-        '17': 9, // USB/iPod -> Characteristic.InputSourceType.USB
+  /*      '17': 9, // USB/iPod -> Characteristic.InputSourceType.USB
         '18': 2, // XM RADIO -> Characteristic.InputSourceType.TUNER
         '19': 3, // HDMI1 -> Characteristic.InputSourceType.HDMI
         '20': 3, // HDMI2 -> Characteristic.InputSourceType.HDMI
@@ -41,7 +41,8 @@ const inputToType = {
         '45': 0, // FAVORITE -> Characteristic.InputSourceType.OTHER
         '48': 0, // MHL -> Characteristic.InputSourceType.OTHER
         '49': 0, // GAME -> Characteristic.InputSourceType.OTHER
-        '57': 0 // SPOTIFY -> Characteristic.InputSourceType.OTHER
+        '57': 0 // SPOTIFY -> Characteristic.InputSourceType.OTHER */
+    
 };
 
 function PioneerAvr(log, host, port) {
